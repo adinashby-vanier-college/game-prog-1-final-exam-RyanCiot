@@ -14,5 +14,45 @@ public class CannonBall extends Actor
      */
     public void act()
     {
+        gotHit();
+        if (isGameLost()) {
+            transitionToGameLostWorld();
+            Greenfoot.playSound("lose.wav");
+        }
+    }
+
+    /**
+     * Checks if the ladybug got hit by the cannonball
+     */
+    public void gotHit()
+    {
+        Actor ladybug = getOneIntersectingObject(Ladybug.class);
+        if (ladybug != null) {
+            World world = getWorld();
+            world.removeObject(ladybug);
+        }
+    }
+
+    /**
+     * 
+     */
+    public boolean isGameLost()
+    {
+        World world = getWorld();
+        if (world.getObjects(Ladybug.class).isEmpty()) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /**
+     * Goes from MyWorld to GameLostWorld
+     */
+    public void transitionToGameLostWorld()
+    {
+        World gameLostWorld =  new  GameLostWorld();
+        Greenfoot.setWorld(gameLostWorld);
     }
 }
