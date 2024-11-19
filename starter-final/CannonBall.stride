@@ -38,7 +38,7 @@
             </body>
         </method>
         <method access="public" type="boolean" type-java="boolean" name="isGameLost" enable="true">
-            <javadoc xml:space="preserve"/>
+            <javadoc xml:space="preserve">Checks if the condition "isGameLost" has been satisfied</javadoc>
             <params/>
             <throws/>
             <body>

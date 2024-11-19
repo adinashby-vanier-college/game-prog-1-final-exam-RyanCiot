@@ -19,7 +19,7 @@ public class GameWonWorld extends World
     }
 
     /**
-     * This method is what allows a message to be made
+     * This method is what allows the "Congratulations" message to be made
      */
     public void showTextWithBigBlackFont(String messages, int x, int y)
     {

@@ -34,7 +34,7 @@ public class CannonBall extends Actor
     }
 
     /**
-     * 
+     * Checks if the condition "isGameLost" has been satisfied
      */
     public boolean isGameLost()
     {

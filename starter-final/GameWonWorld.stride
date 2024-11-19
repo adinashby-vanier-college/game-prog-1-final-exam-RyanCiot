@@ -20,7 +20,7 @@
     </constructors>
     <methods>
         <method access="public" type="void" type-java="void" name="showTextWithBigBlackFont" enable="true">
-            <javadoc xml:space="preserve">This method is what allows a message to be made</javadoc>
+            <javadoc xml:space="preserve">This method is what allows the "Congratulations" message to be made</javadoc>
             <params>
                 <params type="String" type-java="String" name="messages"/>
                 <params type="int" type-java="int" name="x"/>
